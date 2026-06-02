@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PSSingo Construction | Building Better Homes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+<nav>
+  <a class="logo" href="#">PPSingo<span>.</span></a>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#contact" class="nav-quote">Get a Quote</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <div class="hero-content">
+    <span class="hero-tag">Established 2014 · South Africa</span>
+    <h1>We Build <em>Structures</em> That Stand the Test of Time</h1>
+    <p>From luxury residential estates to major commercial infrastructure — BuildCraft delivers precision engineering and master craftsmanship across South Africa.</p>
+    <div class="hero-cta">
+      <a href="#gallery" class="btn-primary">View Our Work</a>
+      <a href="#contact" class="btn-outline">Start a Project</a>
+    </div>
+  </div>
+
+  <div class="hero-stats">
+    <div class="stat-card">
+      <div class="num">12+</div>
+      <div class="label">Years Experience</div>
+    </div>
+    <div class="stat-card">
+      <div class="num">90+</div>
+      <div class="label">Projects Completed</div>
+    </div>
+    <div class="stat-card">
+      <div class="num">9</div>
+      <div class="label">Active Sites</div>
+    </div>
+    <div class="stat-card">
+      <div class="num">98%</div>
+      <div class="label">Client Satisfaction</div>
+    </div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="about-grid">
+    <div class="about-text">
+      <p class="section-label">Who We Are</p>
+      <h2 class="section-title">Building South Africa's Future, <em>One Project at a Time</em></h2>
+      <p>Founded in 2014, BuildCraft Construction has grown into one of South Africa's most trusted construction groups. 
+        We specialise in residential, commercial, industrial, and infrastructure projects, delivering quality you can see and safety you can rely on.</p>
+      <p>Our team of over 20 skilled professionals combines modern engineering technology with hands-on craftsmanship. Every project — from a family home to a highway bridge — 
+        receives the same dedication to excellence.</p>
+    </div>
+    
+    <div class="features-grid">
+      <div class="feature-box">
+        <h4>Full-Scope Projects</h4>
+        <p>From groundbreaking to handover, we manage every phase meticulously.</p>
+      </div>
+      <div class="feature-box">
+        <h4>Safety First</h4>
+        <p>ISO 45001 certified with a strict zero-harm workplace culture.</p>
+      </div>
+      <div class="feature-box">
+        <h4>Expert Craftsmen</h4>
+        <p>Over 20 skilled permanent professionals on our building team.</p>
+      </div>
+      <div class="feature-box">
+        <h4>Award-Winning</h4>
+        <p>7 CIDB contractor recognition awards achieved since 2018.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" style="background: #fff; border-top: 1px solid var(--border);">
+  <div class="gallery-header">
+    <div>
+      <p class="section-label">Project Gallery</p>
+      <h2 class="section-title">Our <em>Completed Works</em></h2>
+    </div>
+    
+    <div class="filter-container">
+      <button class="filter-btn active" onclick="filterGallery('all')">All</button>
+      <button class="filter-btn" onclick="filterGallery('residential')">Residential</button>
+      <button class="filter-btn" onclick="filterGallery('commercial')">Commercial</button>
+      <button class="filter-btn" onclick="filterGallery('infrastructure')">Infrastructure</button>
+      <button class="filter-btn" onclick="filterGallery('renovation')">Renovation</button>
+    </div>
+  </div>
+
+  <div class="gallery-grid">
+    <div class="gallery-card" data-category="commercial" onclick="openLightbox('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1000')">
+      <div class="card-img-wrapper">
+        <span class="card-badge">Commercial</span>
+        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1000" alt="Sandton City Tower">
+      </div>
+      <div class="card-info">
+        <h3>Sandton City Tower</h3>
+        <p>Johannesburg, SA · 2024</p>
+      </div>
+    </div>
+
+    <div class="gallery-card" data-category="infrastructure" onclick="openLightbox('https://images.unsplash.com/photo-1513828583688-c52646db42da?q=80&w=1000')">
+      <div class="card-img-wrapper">
+        <span class="card-badge">Infrastructure</span>
+        <img src="https://images.unsplash.com/photo-1513828583688-c52646db42da?q=80&w=1000" alt="N1 Highway Bridge">
+      </div>
+      <div class="card-info">
+        <h3>N1 Highway Bridge</h3>
+        <p>Midrand, SA · 2023</p>
+      </div>
+    </div>
+
+    <div class="gallery-card" data-category="residential" onclick="openLightbox('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1000')">
+      <div class="card-img-wrapper">
+        <span class="card-badge">Residential</span>
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1000" alt="Umhlanga Luxury Residences">
+      </div>
+      <div class="card-info">
+        <h3>Umhlanga Luxury Residences</h3>
+        <p>Durban, SA · 2024</p>
+      </div>
+    </div>
+
+    <div class="gallery-card" data-category="renovation" onclick="openLightbox('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1000')">
+      <div class="card-img-wrapper">
+        <span class="card-badge">Renovation</span>
+        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1000" alt="Rosebank Retrofit">
+      </div>
+      <div class="card-info">
+        <h3>Rosebank Retrofit</h3>
+        <p>Johannesburg, SA · 2022</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="lightboxModal" class="modal">
+  <button class="modal-close" onclick="closeLightbox()">&times;</button>
+  <img class="modal-content" id="lightboxImg" src="" alt="Enlarged View">
+</div>
+
+<div class="contact-wrapper" id="contact">
+  <section class="contact-grid-layout">
+    <div class="contact-info-side">
+      <p class="section-label">Get In Touch</p>
+      <h2 class="section-title">Ready to Start <em>Your Project?</em></h2>
+      <p style="color: rgba(255,255,255,0.6); font-weight:300;">Whether you're planning a new build, major renovation, or large-scale infrastructure project — our specialist team is ready to discuss your blueprints.</p>
+      
+      <div class="contact-details">
+        <div class="detail-item">
+          <h5>Phone</h5>
+          <p>+27 71 639 3321</p>
+        </div>
+        <div class="detail-item">
+          <h5>Email</h5>
+          <p>projects@pssingo.co.za</p>
+        </div>
+        <div class="detail-item">
+          <h5>Head Office</h5>
+          <p>316 Takalani Street, Tshiawelo, 1818</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="form-side">
+      <h3>Request a Consultation</h3>
+      <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Thank you! Your construction request has been sent to BuildCraft.');">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" required>
+          </div>
+          <div class="form-group">
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" required>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="project-type">Project Type</label>
+          <select id="project-type">
+            <option value="residential">Residential Estate / Luxury Home</option>
+            <option value="commercial">Commercial / Office Block</option>
+            <option value="infrastructure">Public Infrastructure / Civil Engineering</option>
+            <option value="renovation">Renovation & Refurbishment</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="4" placeholder="Tell us briefly about your build dimensions or scope..." required></textarea>
+        </div>
+        
+        <button type="submit" class="btn-primary" style="width: 100%; padding: 1rem;">Send Request</button>
+      </form>
+    </div>
+  </section>
+ 
+  <!-- Floating whatsapp icon -->
+    <div class="whatsapp-container">
+        <a class="whatsapp-btn" href="https://wa.me/27716393321"> 
+            <i class="fa-brands fa-square-whatsapp"></i>
+        </a>
+    </div>
+
+</div>
+
+<footer>
+  <p>© 2014 PSSingo Construction. All rights reserved.</p>
+  <a href="#">Back to top ↑</a>
+</footer>
+
+<script src="js/gallery.js"></script>
+
+</body>
+</html>
